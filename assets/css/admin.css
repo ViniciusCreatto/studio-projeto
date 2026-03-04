@@ -1,0 +1,460 @@
+/* ===== Admin CSS Variables ===== */
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #3b82f6;
+    --secondary-color: #10b981;
+    --secondary-dark: #059669;
+    --danger-color: #ef4444;
+    --danger-dark: #dc2626;
+    --warning-color: #f59e0b;
+    --warning-dark: #d97706;
+    --info-color: #06b6d4;
+    --info-dark: #0891b2;
+    
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+    --text-white: #ffffff;
+    
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --bg-tertiary: #f3f4f6;
+    --bg-dark: #111827;
+    
+    --border-color: #e5e7eb;
+    --border-light: #f3f4f6;
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    
+    --transition: all 0.3s ease;
+}
+
+/* ===== Reset and Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+}
+
+/* ===== Login Page Styles ===== */
+.login-body {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-logo img {
+    width: 48px;
+    height: 48px;
+}
+
+.login-logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.login-header h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* ===== Form Styles ===== */
+.login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 1rem;
+    color: var(--text-light);
+    z-index: 1;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    transition: var(--transition);
+    background: var(--bg-primary);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    color: white;
+    font-size: 0.75rem;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.forgot-password:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* ===== Button Styles ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    line-height: 1;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: var(--text-white);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-dark);
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: var(--text-white);
+}
+
+.btn-danger:hover {
+    background: var(--danger-dark);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-outline:hover {
+    background: var(--bg-tertiary);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+/* ===== Admin Dashboard Layout ===== */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background: var(--bg-secondary);
+}
+
+.admin-sidebar {
+    width: 280px;
+    background: var(--bg-dark);
+    color: var(--text-white);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.admin-sidebar.collapsed {
+    width: 80px;
+}
+
+.admin-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.admin-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.admin-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.admin-logo span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.admin-sidebar.collapsed .admin-logo span {
+    display: none;
+}
+
+.admin-nav {
+    padding: 1rem 0;
+}
+
+.admin-nav-item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.admin-nav-item:hover,
+.admin-nav-item.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-white);
+}
+
+.admin-nav-item i {
+    width: 20px;
+    text-align: center;
+}
+
+.admin-sidebar.collapsed .admin-nav-item span {
+    display: none;
+}
+
+.admin-main {
+    flex: 1;
+    margin-left: 280px;
+    transition: var(--transition);
+}
+
+.admin-sidebar.collapsed + .admin-main {
+    margin-left: 80px;
+}
+
+.admin-topbar {
+    background: var(--bg-primary);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.admin-content {
+    padding: 2rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .admin-sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .admin-main {
+        margin-left: 0;
+    }
+    
+    .login-card {
+        padding: 1.5rem;
+    }
+    
+    .admin-content {
+        padding: 1rem;
+    }
+}
+
+/* ===== Utility Classes ===== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-5 { margin-bottom: 1.25rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-5 { margin-top: 1.25rem; }
+.mt-6 { margin-top: 1.5rem; }
+
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+
+.d-flex { display: flex; }
+.d-none { display: none; }
+.d-block { display: block; }
+
+.justify-content-between { justify-content: space-between; }
+.align-items-center { align-items: center; }
+
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }

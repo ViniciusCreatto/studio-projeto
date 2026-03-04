@@ -1,0 +1,19 @@
+<svg width="300" height="60" viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon/Symbol -->
+  <g transform="translate(0, 10)">
+    <rect x="0" y="0" width="40" height="40" rx="10" fill="url(#logoGradient)"/>
+    <path d="M10 20L17 13L24 20L31 13" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="10" cy="28" r="3" fill="white"/>
+    <circle cx="31" cy="28" r="3" fill="white"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="55" y="38" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#1f2937">NexusTech</text>
+</svg>

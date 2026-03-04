@@ -1,0 +1,86 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="success-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="chart-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#success-gradient)"/>
+  
+  <!-- Chart container -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="600" height="300" rx="15" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    
+    <!-- Grid lines -->
+    <g opacity="0.2">
+      <line x1="50" y1="50" x2="550" y2="50" stroke="white" stroke-width="1"/>
+      <line x1="50" y1="100" x2="550" y2="100" stroke="white" stroke-width="1"/>
+      <line x1="50" y1="150" x2="550" y2="150" stroke="white" stroke-width="1"/>
+      <line x1="50" y1="200" x2="550" y2="200" stroke="white" stroke-width="1"/>
+      <line x1="50" y1="250" x2="550" y2="250" stroke="white" stroke-width="1"/>
+    </g>
+    
+    <!-- Bars -->
+    <rect x="80" y="180" width="60" height="70" rx="5" fill="url(#chart-gradient)"/>
+    <rect x="170" y="120" width="60" height="130" rx="5" fill="url(#chart-gradient)"/>
+    <rect x="260" y="80" width="60" height="170" rx="5" fill="url(#chart-gradient)"/>
+    <rect x="350" y="100" width="60" height="150" rx="5" fill="url(#chart-gradient)"/>
+    <rect x="440" y="60" width="60" height="190" rx="5" fill="url(#chart-gradient)"/>
+    
+    <!-- Trend line -->
+    <path d="M110 180 L200 120 L290 80 L380 100 L470 60" stroke="rgba(255,255,255,0.8)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Data points -->
+    <circle cx="110" cy="180" r="5" fill="white"/>
+    <circle cx="200" cy="120" r="5" fill="white"/>
+    <circle cx="290" cy="80" r="5" fill="white"/>
+    <circle cx="380" cy="100" r="5" fill="white"/>
+    <circle cx="470" cy="60" r="5" fill="white"/>
+  </g>
+  
+  <!-- Success metrics -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="150" height="80" rx="10" fill="rgba(255,255,255,0.2)"/>
+    <text x="75" y="35" text-anchor="middle" fill="white" font-size="24" font-weight="bold">500+</text>
+    <text x="75" y="55" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="14">Projetos</text>
+  </g>
+  
+  <g transform="translate(600, 50)">
+    <rect x="0" y="0" width="150" height="80" rx="10" fill="rgba(255,255,255,0.2)"/>
+    <text x="75" y="35" text-anchor="middle" fill="white" font-size="24" font-weight="bold">300+</text>
+    <text x="75" y="55" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="14">Clientes</text>
+  </g>
+  
+  <!-- Achievement badges -->
+  <g transform="translate(150, 480)">
+    <circle cx="0" cy="0" r="30" fill="rgba(255,255,255,0.2)"/>
+    <path d="M-15 -5 L-5 5 L15 -15" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <g transform="translate(250, 500)">
+    <circle cx="0" cy="0" r="30" fill="rgba(255,255,255,0.2)"/>
+    <text x="0" y="5" text-anchor="middle" fill="white" font-size="20" font-weight="bold">★</text>
+  </g>
+  
+  <g transform="translate(350, 480)">
+    <circle cx="0" cy="0" r="30" fill="rgba(255,255,255,0.2)"/>
+    <text x="0" y="5" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🏆</text>
+  </g>
+  
+  <!-- Floating elements -->
+  <circle cx="700" cy="200" r="40" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="100" cy="350" r="25" fill="rgba(255,255,255,0.2)"/>
+  <rect x="650" y="400" width="80" height="80" rx="15" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Growth arrow -->
+  <g transform="translate(500, 350)">
+    <path d="M0 50 L50 0" stroke="rgba(255,255,255,0.6)" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M40 -10 L50 0 L40 10" stroke="rgba(255,255,255,0.6)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
