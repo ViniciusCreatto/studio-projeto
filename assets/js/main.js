@@ -182,19 +182,19 @@ function initScrollProgress() {
 
 // Exit Intent Popup
 function initExitIntent() {
-    let mouseLeaveTimer;
+    // let mouseLeaveTimer;
     
-    document.addEventListener('mouseleave', (e) => {
-        if (e.clientY < 10) {
-            mouseLeaveTimer = setTimeout(() => {
-                showExitPopup();
-            }, 500);
-        }
-    });
+    // document.addEventListener('mouseleave', (e) => {
+    //     if (e.clientY < 10) {
+    //         mouseLeaveTimer = setTimeout(() => {
+    //             showExitPopup();
+    //         }, 500);
+    //     }
+    // });
     
-    document.addEventListener('mouseenter', () => {
-        clearTimeout(mouseLeaveTimer);
-    });
+    // document.addEventListener('mouseenter', () => {
+    //     clearTimeout(mouseLeaveTimer);
+    // });
 }
 
 function showExitPopup() {
