@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page profissional com carrossel e cabeçalho fixo. Desenvolvida com HTML, CSS e JavaScript modernos.">
+    <meta name="keywords" content="landing page, carrossel, web design, desenvolvimento web">
+    <meta name="author" content="Seu Nome">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.com/">
+    <meta property="og:title" content="Bella Studio - Especialistas em Sobrancelhas e Beleza">
+    <meta property="og:description" content="Landing page profissional para estúdio de beleza especializado em sobrancelhas.">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://seusite.com/">
+    <meta property="twitter:title" content="Bella Studio - Especialistas em Sobrancelhas e Beleza">
+    <meta property="twitter:description" content="Landing page profissional para estúdio de beleza especializado em sobrancelhas.">
+    <meta property="twitter:image" content="./assets/images/og-image.jpg">
+
+    <title>Lorem Ipsum - Dolor Sit Amet</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="preload" href="./assets/js/main.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Header Fixo -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="#" class="nav__logo-link">
+                    <img src="./assets/images/logo.png" alt="Logo" class="nav__logo-img">
+                    <span class="nav__logo-text">Lorem Ipsum</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Serviços</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#courses" class="nav__link">Cursos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#social-proof" class="nav__link">Resultados</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero-mobile">
+            <div class="hero-mobile__content container">
+                <div class="hero-mobile__grid">
+                    <div class="hero-mobile__header">
+                        <h1 class="hero-mobile__title">Lorem ipsum dolor sit </h1>
+                        <p class="hero-mobile__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam beatae vitae minus esse, soluta optio veritatis eius possimus architecto est suscipit ab reprehenderit officiis vero, blanditiis quos officia aliquam ipsum?</p>
+                        
+                        <div class="hero__bullets">
+                            <div class="bullet-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero__ctas">
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta" class="hero-mobile__cta primary" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Agendar pelo WhatsApp
+                            </a>
+                            <a href="#services" class="hero-mobile__cta secondary">
+                                Ver Serviços
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-before-after" aria-label="Antes e depois em destaque">
+                        <div class="ba-carousel" id="hero-ba-carousel" aria-label="Carrossel de antes e depois">
+                            <button class="ba-carousel__nav ba-carousel__nav--prev" id="hero-ba-prev" type="button" aria-label="Caso anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+
+                            <div class="ba-carousel__track" id="hero-ba-track">
+                                <article class="ba-slide active">
+                                    <div class="ba-slide__media">
+                                        <div class="ba-image">
+                                            <span>Antes</span>
+                                            <img src="./assets/images/slide1.svg" alt="Lorem ipsum">
+                                        </div>
+                                        <div class="ba-image">
+                                            <span>Depois</span>
+                                            <img src="./assets/images/slide2.svg" alt="Lorem ipsum">
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="ba-slide">
+                                    <div class="ba-slide__media">
+                                        <div class="ba-image">
+                                            <span>Antes</span>
+                                            <img src="./assets/images/slide2.svg" alt="Lorem ipsum">
+                                        </div>
+                                        <div class="ba-image">
+                                            <span>Depois</span>
+                                            <img src="./assets/images/slide3.svg" alt="Lorem ipsum">
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="ba-slide">
+                                    <div class="ba-slide__media">
+                                        <div class="ba-image">
+                                            <span>Antes</span>
+                                            <img src="./assets/images/slide1.svg" alt="Lorem ipsum">
+                                        </div>
+                                        <div class="ba-image">
+                                            <span>Depois</span>
+                                            <img src="./assets/images/slide3.svg" alt="Lorem ipsum">
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="ba-slide">
+                                    <div class="ba-slide__media">
+                                        <div class="ba-image">
+                                            <span>Antes</span>
+                                            <img src="./assets/images/slide2.svg" alt="Lorem ipsum">
+                                        </div>
+                                        <div class="ba-image">
+                                            <span>Depois</span>
+                                            <img src="./assets/images/slide1.svg" alt="Lorem ipsum">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <button class="ba-carousel__nav ba-carousel__nav--next" id="hero-ba-next" type="button" aria-label="Próximo caso">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <div class="ba-carousel__dots" id="hero-ba-dots" aria-label="Navegação do carrossel">
+                                <button class="ba-dot active" type="button" aria-label="Ir para o caso 1"></button>
+                                <button class="ba-dot" type="button" aria-label="Ir para o caso 2"></button>
+                                <button class="ba-dot" type="button" aria-label="Ir para o caso 3"></button>
+                                <button class="ba-dot" type="button" aria-label="Ir para o caso 4"></button>
+                            </div>
+                        </div>
+                        <div class="hero-before-after__info">
+                            <p class="hero-before-after__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilisi, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__image">
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#fdf2f8;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#f9a8d4;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#d946ef;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="500" fill="url(#aboutGrad)"/>
+                            <ellipse cx="200" cy="180" rx="120" ry="150" fill="#d946ef" opacity="0.3"/>
+                            <circle cx="200" cy="150" r="80" fill="#ec4899" opacity="0.2"/>
+                            <path d="M 150 120 Q 200 100 250 120" stroke="#f9a8d4" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <path d="M 150 180 Q 200 160 250 180" stroke="#f9a8d4" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <circle cx="160" cy="140" r="8" fill="#fdf2f8"/>
+                            <circle cx="240" cy="140" r="8" fill="#fdf2f8"/>
+                            <path d="M 200 180 Q 190 200 180 220" stroke="#fdf2f8" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <text x="200" y="280" text-anchor="middle" fill="#fdf2f8" font-size="16" font-weight="bold">Lorem Ipsum</text>
+                            <text x="200" y="300" text-anchor="middle" fill="#fbcfe8" font-size="12">Dolor Sit</text>
+                        </svg>
+                    </div>
+                    <div class="about__text">
+                        <h3>Lorem, ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quaerat modi ex vel officia dolores error molestiae ipsa est, nam, libero eaque laborum! Sint aperiam dignissimos modi aliquid explicabo delectus?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, optio dolores recusandae labore delectus explicabo error praesentium aspernatur dolorum culpa, nostrum cumque ducimus provident in placeat dolor tempore aperiam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corporis praesentium nesciunt nisi! Quod, eaque autem! Dolorum quas dolores, doloribus placeat adipisci amet in architecto quasi, deleniti corporis iusto quisquam!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Serviços Presenciais</h2>
+                    <p class="section__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3 class="service-card__title">Lorem ipsum dolor</h3>
+                        <div class="service__price">
+                            <span class="price">R$ 150</span>
+                            <span class="session">Lorem ipsum</span>
+                        </div>
+                        
+                        <div class="service__details">
+                            <div class="detail-section">
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum dolor</h4>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <p><strong>Lorem:</strong> 30min - 1h<br>
+                                <strong>Ipsum:</strong> Dolor sit amet</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20Depilação%20a%20Laser" class="service-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Lorem ipsum
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3 class="service-card__title">Lorem ipsum dolor</h3>
+                        <div class="service__price">
+                            <span class="price">R$ 300</span>
+                            <span class="session">lorem ipsum</span>
+                        </div>
+                        
+                        <div class="service__details">
+                            <div class="detail-section">
+                                <h4>Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <p><strong>Lorem:</strong> 45min - 1h30<br>
+                                <strong>Ipsum:</strong> Dolor sit amet</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20Harmonização%20Facial" class="service-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Agendar Agora
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3 class="service-card__title">Lorem ipsum</h3>
+                        <div class="service__price">
+                            <span class="price">R$ 250</span>
+                            <span class="session">lorem ipsum</span>
+                        </div>
+                        
+                        <div class="service__details">
+                            <div class="detail-section">
+                                <h4>Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <p><strong>Lorem:</strong> 1h30 - 2h<br>
+                                <strong>Ipsum:</strong> Dolor sit amet</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20Brow%20Design" class="service-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Agendar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Cursos Online</h2>
+                    <p class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course__badge">ONLINE</div>
+                        <h3 class="course-card__title">Lorem Ipsum</h3>
+                        <div class="course__price">
+                            <span class="price">R$ 297</span>
+                            <span class="installments">12x de R$ 24,75</span>
+                        </div>
+                        
+                        <div class="course__details">
+                            <div class="detail-section">
+                                <h4>Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <ul class="course-features">
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20curso%20de%20Brow%20Lamination" class="course-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Quero me inscrever
+                        </a>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course__badge">ONLINE</div>
+                        <h3 class="course-card__title">Dolor Sit</h3>
+                        <div class="course__price">
+                            <span class="price">R$ 397</span>
+                            <span class="installments">12x de R$ 33,08</span>
+                        </div>
+                        
+                        <div class="course__details">
+                            <div class="detail-section">
+                                <h4>Lorem ipsum dolor sit</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <ul class="course-features">
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                    <li><i class="fas fa-check"></i> Lorem ipsum dolor</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20curso%20de%20Lash%20Lifting" class="course-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Quero me inscrever
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-proof" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">O Que Nossas Clientes Dizem</h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial__image">
+                            <img src="./assets/images/avatar1.svg" alt="Lorem Ipsum">
+                        </div>
+                        <div class="testimonial__content">
+                            <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum."</p>
+                            <div class="testimonial__author">
+                                <strong>Lorem Ipsum</strong>
+                                <span>Dolor sit amet</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial__image">
+                            <img src="./assets/images/avatar2.svg" alt="Dolor Sit">
+                        </div>
+                        <div class="testimonial__content">
+                            <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor."</p>
+                            <div class="testimonial__author">
+                                <strong>Dolor Sit</strong>
+                                <span>Lorem ipsum</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial__image">
+                            <img src="./assets/images/avatar3.svg" alt="Amet Elit">
+                        </div>
+                        <div class="testimonial__content">
+                            <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam."</p>
+                            <div class="testimonial__author">
+                                <strong>Amet Elit</strong>
+                                <span>Consectetur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Entre em Contato</h2>
+                    <p class="section__subtitle">Agende seu horário e transforme sua beleza</p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Lorem</h4>
+                                <p>(00) 0000-0000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Ipsum</h4>
+                                <p>lorem@ipsum.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Dolor</h4>
+                                <p>Lorem ipsum, 123 - Dolor, SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Sit</h4>
+                                <p>00h-00h | 00h-00h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="(11) 9999-9999">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Serviço Desejado</label>
+                                <select class="form-control" id="service" name="service" required>
+                                    <option value="">Lorem ipsum</option>
+                                    <option value="design">Lorem ipsum</option>
+                                    <option value="micropigmentacao">Lorem ipsum</option>
+                                    <option value="tratamento-facial">Lorem ipsum</option>
+                                    <option value="alongamento">Lorem ipsum</option>
+                                    <option value="curso">Lorem ipsum</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Conte um pouco mais sobre o que você procura..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <img src="./assets/images/logo.png" alt="Logo">
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/5511999999999" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Lorem</a></li>
+                        <li><a href="#social-proof">Ipsum</a></li>
+                        <li><a href="#services">Dolor</a></li>
+                        <li><a href="#courses">Sit</a></li>
+                        <li><a href="#contact">Amet</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Contato</h4>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                        <li><i class="fas fa-envelope"></i> lorem@ipsum.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lorem ipsum, 123 - Dolor, SP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Lorem Ipsum. Lorem ipsum dolor sit amet.</p>
+                <div class="footer__legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/551199999999?text=Olá! Tenho interesse nos serviços da Bella Studio" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
